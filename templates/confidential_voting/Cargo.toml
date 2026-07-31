@@ -1,0 +1,21 @@
+[package]
+name = "confidential_voting"
+version = "0.1.0"
+edition = "2024"
+description = "Confidential voting template for Tari Ootle (stealth vote tokens, unlinkable ballots)"
+
+[dependencies]
+tari_template_lib = { version = "0.29" }
+
+[dev-dependencies]
+tari_template_test_tooling = "0.37"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+opt-level = 's'
+lto = true
+codegen-units = 1
+panic = 'abort'
+strip = true

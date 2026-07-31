@@ -1,0 +1,15 @@
+[package]
+name = "integration"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ootle-rs = { path = "../../vendor/ootle-rs" }
+tari_ootle_transaction = "0.37"
+tari_template_lib = "0.29"
+tari_template_lib_types = "0.29"
+ootle_byte_type = "0.10"
+indexmap = "2"
+tari_crypto = "0.23"
+tokio = { version = "1", features = ["full"] }
+anyhow = "1"
