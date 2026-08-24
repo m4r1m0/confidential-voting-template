@@ -1,3 +1,6 @@
 /target
 Cargo.lock
 **/*.wasm
+
+# Test-tooling build artifacts (TemplateTest::my_crate compiles here)
+target/
